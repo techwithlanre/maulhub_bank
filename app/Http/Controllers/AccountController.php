@@ -34,7 +34,7 @@ class AccountController extends Controller
         CURLOPT_HTTPHEADER => array(
             'Accept: application/json',
             'Content-Type: application/json',
-            'Authorization: SCSec-L-10aef30162a84c1c993b2d8cdb6eaa4d'
+            'Authorization: '.env(SAGECLOUD_API_KEY)
         ),
         ));
 
